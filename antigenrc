@@ -1,0 +1,12 @@
+source ~/antigen.zsh
+
+antigen use prezto
+antigen bundle sorin-ionescu/prezto modules/helper  # required for Git module
+antigen bundle sorin-ionescu/prezto modules/editor
+antigen bundle sorin-ionescu/prezto modules/git
+antigen bundle sorin-ionescu/prezto modules/prompt
+antigen bundle bhilburn/powerlevel9k
+
+antigen theme bhilburn/powerlevel9k powerlevel9k
+
+antigen apply
