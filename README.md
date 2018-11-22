@@ -7,6 +7,7 @@ This also expects that you back up your existing dotfiles and that you don't run
 Steps to setup:
 $ git clone https://github.com/zsh-users/antigen.git ~/antigen
 $ ln -s antigen/antigen.zsh ~/antigen.zsh
+$ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 Assuming you have cloned this repo to .dotfiles in your ~/ then you'd do
 
