@@ -4,7 +4,11 @@
 
 
 (setq user-full-name "Sirius Rayner-Karlsson")
-(setq user-mail-address "anders.rk@me.com")
+(setq user-mail-address "sirius@rayner-karlsson.se")
+
+(add-hook 'mail-mode-hook 'turn-on-auto-fill)
+;; Mutt support.
+(setq auto-mode-alist (append '(("/tmp/mutt.*" . mail-mode)) auto-mode-alist))
 
 (setenv "PATH" (concat "/usr/local/bin:/opt/local/bin:/usr/bin:/bin" (getenv "PATH")))
 (setq exec-path (append exec-path '("/usr/local/bin")))
